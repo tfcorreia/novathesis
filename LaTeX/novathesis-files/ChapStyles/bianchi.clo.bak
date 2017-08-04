@@ -1,0 +1,19 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% bianchi.clo
+%% NOVA thesis configuration file
+%%
+%% Costumization for the Bianchi chapter style
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%% Configure chapters, headers, footers, and page numbering
+\chapterstyle{bianchi}
+
+\setlength\beforechapskip{-4\baselineskip}
+\setlength\midchapskip{-1\baselineskip}
+\setlength\afterchapskip{0,8\baselineskip}
+\renewcommand*{\chapnamefont}{%
+      \normalfont\small\bfseries}
+\renewcommand*{\chapnumfont}{%
+      \normalfont\small\bfseries}
+\renewcommand*{\chaptitlefont}{%
+      \normalfont\large\bfseries}

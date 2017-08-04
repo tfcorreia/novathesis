@@ -25,8 +25,6 @@
 
 \makeatletter
 \newsavebox{\cdcover@savebox}
-\newsavebox{\cdcover@savebox@spineone}
-\newsavebox{\cdcover@savebox@spinetwo}
 
 \newcommand{\printcdcover}{%
 	\clearpage
@@ -45,13 +43,12 @@
 	\setmarginnotes{0mm}{0mm}{0mm}
 	\checkandfixthelayout[fixed]
 
-  % \ifthenelse{\equal{\novathesis@opt@docdegree}{phd}%
-  %     \OR\equal{\novathesis@opt@docdegree}{phdprop}%
-  %     \OR\equal{\novathesis@opt@docdegree}{phdplan}%
-  %     }%
-  %     {\AddToShipoutPictureBG*{\includegraphics[width=120mm]{cd-cover-phd}}}
-  %     {\AddToShipoutPictureBG*{\includegraphics[width=120mm]{cd-cover-msc}}}
-  \AddToShipoutPictureBG*{\includegraphics[width=120mm]{\@nameuse{thesiscover\novathesis@opt@docdegree,cdfront}}}
+  \ifthenelse{\equal{\novathesis@opt@docdegree}{phd}%
+  		\OR\equal{\novathesis@opt@docdegree}{phdprop}%
+  		\OR\equal{\novathesis@opt@docdegree}{phdplan}%
+      }%
+      {\AddToShipoutPictureBG*{\includegraphics[width=120mm]{cd-cover-phd}}}
+      {\AddToShipoutPictureBG*{\includegraphics[width=120mm]{cd-cover-msc}}}
 
 	\savebox{\cdcover@savebox}{%
 	\begin{minipage}[t][7.0cm]{9cm}
@@ -71,7 +68,7 @@
 
 		% Title of Dissertation
 		\fontfamily{phv}\fontsize{12}{12}\selectfont
-		\textbf{\covertitle}
+		\textbf{\thetitle}
 		\vfill
 
 		% Degree
@@ -94,8 +91,6 @@
 
 }
 
-
-
 \newcommand{\printcdinlay}{%
 	\clearpage
 
@@ -113,14 +108,13 @@
 	\setmarginnotes{0mm}{0mm}{0mm}
 	\checkandfixthelayout[fixed]
 
-  % \ifthenelse{\equal{\novathesis@opt@docdegree}{phd}%
-  %     \OR\equal{\novathesis@opt@docdegree}{phdprop}%
-  %     \OR\equal{\novathesis@opt@docdegree}{phdplan}%
-  %     }%
-  %     {\AddToShipoutPictureBG*{\includegraphics[width=150mm]{cd-inlay-phd}}}
-  %     {\AddToShipoutPictureBG*{\includegraphics[width=150mm]{cd-inlay-msc}}}
-  \AddToShipoutPictureBG*{\includegraphics[width=150mm]{\@nameuse{thesiscover\novathesis@opt@docdegree,cdinlay}}}
-  
+  \ifthenelse{\equal{\novathesis@opt@docdegree}{phd}%
+  		\OR\equal{\novathesis@opt@docdegree}{phdprop}%
+  		\OR\equal{\novathesis@opt@docdegree}{phdplan}%
+      }%
+      {\AddToShipoutPictureBG*{\includegraphics[width=150mm]{cd-inlay-phd}}}
+      {\AddToShipoutPictureBG*{\includegraphics[width=150mm]{cd-inlay-msc}}}
+
 	\savebox{\cdcover@savebox}{%
 	\begin{minipage}[t][8cm]{11cm}
 		
@@ -141,7 +135,7 @@
 
 		% Title of Dissertation
 		\fontfamily{phv}\fontsize{12}{12}\selectfont
-		\textbf{\covertitle}
+		\textbf{\thetitle}
 		\vfill
 
 		% Degree
@@ -169,52 +163,6 @@
   {~\\[0.75cm]~\hspace*{2.5cm}}
 	{~\\[0.75cm]~\hspace*{1.8cm}}
 	\usebox{\cdcover@savebox}
-
-  \newlength{\novathesis@cd@box@height}
-
-	\savebox{\cdcover@savebox@spineone}{%
-    \fontfamily{phv}\fontsize{9}{9}\selectfont
-    \makebox[\paperheight][c]{
-      \begin{tabular}{l}
-        \thespine[year]
-      \end{tabular}
-      \hfill
-      \begin{tabular}{l}
-        \thespine[author]
-      \end{tabular}
-      \hfill
-      \settototalheight{\novathesis@cd@box@height}{tg}%
-      \begin{tabular}{c}
-        \raisebox{-5pt}{\rotatebox[origin=c]{-90}{\includegraphics[height=2\novathesis@cd@box@height,origin=c]{\thespine[logo]}}}
-      \end{tabular}
-    }
-	}
-  \AddToShipoutPictureFG*{% Add <stuff> to current page foreground
-\put(0.5,\LenToUnit{0.5\paperheight}){\rotatebox[origin=c]{90}{{\usebox{\cdcover@savebox@spineone}}}}%
-    }%
-
-  \savebox{\cdcover@savebox@spinetwo}{%
-    \fontfamily{phv}\fontsize{9}{9}\selectfont
-    \makebox[\paperheight][c]{
-      \begin{tabular}{l}
-        \thespine[year]
-      \end{tabular}
-      \hfill
-      \begin{tabular}{l}
-        \thespine[title]
-      \end{tabular}
-      \hfill
-      \settototalheight{\novathesis@cd@box@height}{tg}%
-      \begin{tabular}{c}
-        \raisebox{-5pt}{\rotatebox[origin=c]{-90}{\includegraphics[height=2\novathesis@cd@box@height,origin=c]{\thespine[logo]}}}
-      \end{tabular}
-    }
-  }
-  \settototalheight{\novathesis@cd@box@height}{\usebox{\cdcover@savebox@spinetwo}}%
-  \AddToShipoutPictureFG*{% Add <stuff> to current page foreground
-\put(\LenToUnit{\paperwidth-\novathesis@cd@box@height-0.5pt},\LenToUnit{0.5\paperheight}){\rotatebox[origin=c]{90}{{\usebox{\cdcover@savebox@spinetwo}}}}%
-    }%
-  
 }
 
 \makeatother
