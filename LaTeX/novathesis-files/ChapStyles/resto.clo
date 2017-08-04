@@ -1,0 +1,14 @@
+\makechapterstyle{resto}{%
+	\chapterstyle{bianchi}
+	\renewcommand*{\chapnumfont}{%
+		\normalfont\small\bfseries}
+	\renewcommand*{\chapnamefont}{%
+		\normalfont\small\bfseries}
+	\renewcommand*{\chaptitlefont}{%
+		\normalfont\large\bfseries}
+	\renewcommand*{\printchapternum}{\chapnumfont \thechapter}%
+}
+\chapterstyle{bianchi}
+\setlength\beforechapskip{-70pt}
+\setlength\midchapskip{0pt}
+\setlength\afterchapskip{5pt}
