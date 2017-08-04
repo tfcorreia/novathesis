@@ -1,0 +1,20 @@
+\chapter*{Motivation and objective}
+\label{motivationobj}
+\addcontentsline{toc}{chapter}{Motivation and objective}
+
+The use of epoxy resins as matrix for a carbon fiber reinforced composite is regarded as a big advancement in aviation history. However, due to the nature of the resin and its cure process, there is a time interval in which the material can be used for fabrication. Since these \gls{prepregs} are being used in \gls{hd} which uses a thermal cycle to aid the forming process, a co-cure process will occur, which can degrade the material and reduce mechanical and physical properties. Therefore, there is a need to assess the maximum \gls{outtime} applied to material for Hot Forming process in order to maintain the mechanical and physical requirements. Material with greater out time and \gls{shelflife} is more focused since it can represent material with less out time and shelf life if the requirements are met. Therefore if the material with greater out time and shelf life is within requirements, assumption is made that the material can be used in Hot Forming and will assure product quality.
+
+The goal is set to find out if higher out time material is able to fulfill and meet the requirements as well as maintain some work-ability qualities after hot forming. This will help Embraer by saving some fresh new material and re-use some of their material stored for hot forming process. 
+
+\vspace{70pt}
+{\let\clearpage\relax\chapter*{Thesis arrangement}}
+\label{arrangement}
+\addcontentsline{toc}{chapter}{Thesis arrangement}
+
+For better understanding and organization, the thesis is organized as:
+\begin{enumerate}
+	\item Introduction - Where composite fundamental and trivial knowledge is exposed as well as its applications and curing process. It also covers the fabrication flow of the tested panels and a brief explanation of each workstation;
+	\item Development - In this chapter material requirement, testing and fabrication are scrutinized and explained as well some other details involving the development of the thesis;
+	\item Physical testing of prepreg material - This chapter contains the physical testing and conclusions of said experiments along with procedure and description of each test;
+	\item Mechanical testing of cured laminates - Follows the same logic as chapter \ref{physical}, but with mechanical testing and more detailed procedure and preparation;
+\end{enumerate}
