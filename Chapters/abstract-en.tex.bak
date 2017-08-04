@@ -1,0 +1,15 @@
+%!TEX root = ../template.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% abstrac-en.tex
+%% NOVA thesis document file
+%%
+%% Abstract in English
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Since its first use on Edison's incandescent lamp, carbon fiber has been studied and developed into an important resource in industry. This material is used in many forms but mainly in fiber rolls or tapes and is usually preimpregnated with resin. As such, it is processed and transformed using molds, whether it is only deposited using either Automated Tape Laying (ATL) or Automated Fiber Placement (AFP) and also hot pressed into a shape. Since Embraer has such processes and there's a need to assess the materials response to its exposure and its response to being processes, a test proposal was made.
+
+Accordingly, to answer this need, a test proposal is made in order to evaluate the material and the process. This provides a guide on how to make the necessary arrangements and how to conduct said tests. Furthermore, exposure conditions are disclosured as well as the size of the specimens and panels to process. In the end, we'll be able to understand how different exposure conditions and how hot drape thermal cycle affect this materials.
+
+% Palavras-chave do resumo em Inglês
+\begin{keywords}
+hot drape, carbon fiber, exposure conditions, aeronautics, prepregs.
+\end{keywords} 

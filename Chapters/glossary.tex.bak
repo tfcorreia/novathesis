@@ -1,0 +1,144 @@
+%!TEX root = ../template.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% glossary.tex
+%% NOVA thesis document file
+%%
+%% Glossary definition
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newglossaryentry{computer} {
+%	name={computer}, 
+%	description={An electronic device which is capable of receiving information (data) in a particular form and of performing a sequence of operations in accordance with a predetermined but variable set of procedural instructions (program) to produce a result in the form of information or signals.
+%}
+%}
+\newglossaryentry{prepregs} {
+	name={prepregs}, 
+	description={Carbon fiber material that has been impregnated with resin previously by the supplier to facilitate and improve the manufacturing process}
+}
+\newglossaryentry{outtime} {
+	name={out time}, 
+	description={Limit exposure period in which a perishable material could be left out of its storage recommended condition, which is accumulative and the total amount of time the prepreg stays out of its storage recommended condition shall be recorded until it reaches the limit stated by the supplier}
+}
+\newglossaryentry{shelflife} {
+	name={Shelf life}, 
+	description={It is the period of time from the manufacturing date, in which the material is packed and stored under some specific conditions in order to keep its physical and chemical properties adequate for use}
+}
+
+\newglossaryentry{hd} {
+	name={Hot Forming}, 
+	description={Forming process of uncured laminates using heat and pressure}
+}
+
+\addto{\captionsportuguese}{
+\renewcommand{\glossaryname}{Symbols List}
+}
+
+\newglossaryentry{npt} {
+	name=\ensuremath{T_{p}},
+	description={Nominal ply thickness},
+	unit={mm},
+	sort=NominalPlyThickness,
+	type=symbolslist
+}
+
+\newglossaryentry{npp} {
+	name=\ensuremath{N_{p}},
+	description={Number of plies on the panel},
+	unit={},
+	sort=NumberOfPliesPanel,
+	type=symbolslist
+}
+
+\newglossaryentry{ti} {
+	name=\ensuremath{t_{i}},
+	description={Measurement "i" of the panel's thickness},
+	unit={mm},
+	sort=MeasurementPanelThickness,
+	type=symbolslist
+}
+
+\newglossaryentry{nm} {
+	name=\ensuremath{n_{m}},
+	description={Number of measurements},
+	unit={},
+	sort=NumberOfMeasurements,
+	type=symbolslist
+}
+
+\newglossaryentry{tn} {
+	name=\ensuremath{T_{n}},
+	description={Normalized ply thickness},
+	unit={mm},
+	sort=NormalizedPlyThickness,
+	type=symbolslist
+}
+
+\newglossaryentry{np} {
+	name=\ensuremath{n_{p}},
+	description={Number of panels},
+	unit={},
+	sort=NumberOfPanels,
+	type=symbolslist
+}
+
+\newglossaryentry{tpi} {
+	name=\ensuremath{T_{pi}},
+	description={Normalized ply thickness of the "i" panel},
+	unit={mm},
+	sort=NormalizedPlyThicknessPanelI,
+	type=symbolslist
+}
+
+\newglossaryentry{degreecure} {
+	name=\ensuremath{\dfrac{d\alpha}{dt}},
+	description={Degree of cure},
+	unit={},
+	sort=DegreeOfCure,
+	type=symbolslist
+}
+
+\newglossaryentry{heatreaction} {
+	name=\ensuremath{H(t)},
+	description={Heat of the reaction at time \textit{t}},
+	unit={},
+	sort=HeatReaction,
+	type=symbolslist
+}
+
+\newglossaryentry{heatreactiontotal} {
+	name=\ensuremath{H_{T}},
+	description={Total heat of the reaction},
+	unit={},
+	sort=TotalHeatReaction,
+	type=symbolslist
+}
+
+\newglossaryentry{tdrc} {
+	name=\ensuremath{K(T)},
+	description={Temperature dependent rate constant},
+	unit={},
+	sort=TempDependantRateConstant,
+	type=symbolslist
+}
+
+\newglossaryentry{reactionmodel} {
+	name=\ensuremath{f(a)},
+	description={Reaction Model},
+	unit={},
+	sort=ReactionModel,
+	type=symbolslist
+}
+
+\newglossaryentry{activationenergy} {
+	name=\ensuremath{E_{A}},
+	description={Activation Energy},
+	unit=\ensuremath{kJ mol^{-1}},
+	sort=ActivationEnergy,
+	type=symbolslist
+}
+\newglossaryentry{gascte} {
+	name=\ensuremath{R},
+	description={Universal Gas Constant},
+	unit=\ensuremath{J K^{-1} mol^{-1}},
+	sort=UniversalGasCte,
+	type=symbolslist
+}
